@@ -21,7 +21,7 @@
         <v-btn
           color="orange-lighten-2"
           variant="text"
-          @click="router.push('/card')"
+          @click="router.push({name: 'card', props: true})"
         >
           More...
         </v-btn>
@@ -37,12 +37,6 @@
 
     const router = useRouter()
 
-    const props = defineProps({
-        product: {
-            type: Object,
-            default: ()=>{}
-        }
-    })
 </script>
 
 <style lang="scss" scoped>
